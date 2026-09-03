@@ -2,6 +2,18 @@
 
 **ActionD Web** is the frontend console for the [ActionD](https://github.com/JoeGlenn1213/ActionD) local CI/CD daemon. Built with Next.js and shadcn/ui, it is the "human cockpit" for monitoring local “Slow Intelligence” workflows — a live list, honest status, and one-click retry/cancel without leaving the browser.
 
+## 📸 Screenshots
+
+| Dashboard | Actions |
+|:---:|:---:|
+| ![Dashboard](docs/screenshots/dashboard.png) | ![Actions list](docs/screenshots/actions.png) |
+
+| Failed job + AI diagnosis | Plugin management |
+|:---:|:---:|
+| ![Action detail with diagnosis card](docs/screenshots/action-detail.png) | ![Plugins](docs/screenshots/plugins.png) |
+
+> Screenshots are generated from mocked API data by `node scripts/screenshots.mjs` (no backend needed).
+
 ## ✨ Features
 
 - **Cockpit charts**: 14-day pass-rate trend, success rate by plugin, duration distribution and runs-by-hour — colored via the theme's chart tokens, dark-mode aware.
