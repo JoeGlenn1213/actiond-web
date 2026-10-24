@@ -1,6 +1,14 @@
 # ActionD Web Dashboard
 
+<p align="center">
+  <img src="https://img.shields.io/github/v/release/JoeGlenn1213/actiond-web" alt="Release">
+  <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License">
+  <img src="https://img.shields.io/badge/Next.js-000000?logo=nextdotjs" alt="Next.js">
+</p>
+
 **ActionD Web** is the frontend console for the [ActionD](https://github.com/JoeGlenn1213/ActionD) local CI/CD daemon. Built with Next.js and shadcn/ui, it is the "human cockpit" for monitoring local “Slow Intelligence” workflows — a live list, honest status, and one-click retry/cancel without leaving the browser.
+
+Part of the LGH ecosystem: [lgh](https://github.com/JoeGlenn1213/lgh) (local Git server) · [ActionD](https://github.com/JoeGlenn1213/ActionD) (CI/CD engine) · [homebrew-tap](https://github.com/JoeGlenn1213/homebrew-tap)
 
 ## 📸 Screenshots
 
