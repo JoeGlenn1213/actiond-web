@@ -127,7 +127,9 @@ propagated as-is.
 
 ## 📦 Releases
 
-Releases are cut by pushing a `v*` tag (e.g. `v0.1.1`). The GitHub Actions
+Releases are cut by pushing a `v*` tag (e.g. `v0.1.1`). The version after the
+`v` prefix must match `package.json`; the release workflow fails if they
+differ. The GitHub Actions
 [release workflow](.github/workflows/release.yml) builds a static export and
 uploads two assets to the release:
 
