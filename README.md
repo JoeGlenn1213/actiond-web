@@ -125,6 +125,33 @@ GET  /api/lgh/status/{repo}/{sha} # commit status report (proxied from LGH)
 Errors from mutations surface as toasts; the backend's plain-text messages are
 propagated as-is.
 
+## 📦 Releases
+
+Releases are cut by pushing a `v*` tag (e.g. `v0.1.1`). The version after the
+`v` prefix must match `package.json`; the release workflow fails if they
+differ. The GitHub Actions
+[release workflow](.github/workflows/release.yml) builds a static export and
+uploads two assets to the release:
+
+- `actiond-web-<version>.tar.gz` — prebuilt `out/` directory
+- `actiond-web-<version>.tar.gz.sha256` — SHA-256 checksum
+
+**To cut a release:**
+
+```bash
+git tag v0.1.1
+git push origin v0.1.1
+```
+
+The workflow can also be triggered manually via `workflow_dispatch` for any
+existing tag.
+
+**Homebrew asset URL pattern:**
+
+```
+https://github.com/JoeGlenn1213/actiond-web/releases/download/<tag>/actiond-web-<version>.tar.gz
+```
+
 ## License
 
 MIT License - Copyright (c) 2025 JoeGlenn1213
